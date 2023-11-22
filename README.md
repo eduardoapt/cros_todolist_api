@@ -14,9 +14,18 @@ Certifique-se de ter o Node.js e o Docker instalados em seu sistema.
 Antes de executar a aplicação, configure as variáveis de ambiente.
 
 Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+Existe um arquivo de exemplo. Deverá ser feita a conexão com um banco MySQL localmente.
+
+### Exemplo
 
 - `PORT=3000`
 - `SECRET_KEY=SuaChaveSecreta`
+- `DB_HOST="localhost"`
+- `DB_PORT="3306"`
+- `DB_USER="seu_nome"`
+- `DB_PASSWORD="123456"`
+- `DB_NAME="TodoList"`
+- `DB_TYPE="mysql"`
 
 ## Scripts
 
