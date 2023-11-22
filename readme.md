@@ -15,18 +15,30 @@ Antes de executar a aplicação, configure as variáveis de ambiente.
 
 Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
-```env
-PORT=3000
-SECRET_KEY=SuaChaveSecreta```
+- `PORT=3000`
+- `SECRET_KEY=SuaChaveSecreta`
 
 ## Scripts
+
+### Executando Migrações
+
+`npx prisma migrate dev --name migrate`
+
+Isso criará um novo arquivo de migração com o nome especificado na pasta prisma/migrations. Você pode adicionar e modificar os modelos no schema.prisma conforme necessário antes de aplicar a migração.
+
+Para aplicar as migrações pendentes no banco de dados, execute:
+
+`npx prisma migrate deploy`
+
+Isso aplicará as migrações pendentes e atualizará o esquema do banco de dados de acordo com o schema.prisma.
+
+
 
 ### Executando a Aplicação
 
 Para iniciar o servidor localmente:
 
-```bash
-npm start```
+`npm start`
 
 
 ## Docker
@@ -35,13 +47,11 @@ npm start```
 
 1. Construa a imagem
 
-```bash
-npm run docker-build```
+`npm run docker-build`
 
 2. Execute o contêiner
 
-```bash
-npm run server```
+`npm run server`
 
 
 ### Isso disponibilizará a aplicação em http://localhost:3000.
