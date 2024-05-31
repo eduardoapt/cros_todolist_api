@@ -22,7 +22,7 @@ const userService = {
         throw new Error("Erro ao criar usuário. Tente outro e-mail.")
       }
     } catch (error) {
-      throw new Error("Erro ao criar usuário. Tente outro e-mail.")
+      throw new Error("Erro no servidor ao criar usuárip.")
     }
   },
 

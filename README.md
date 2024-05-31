@@ -50,18 +50,7 @@ Para iniciar o servidor localmente:
 `npm start`
 
 
-## Docker
-
-### Para rodar a aplicação em um contêiner Docker:
-
-1. Construa a imagem
-
-`npm run docker-build`
-
-2. Execute o contêiner
-
-`npm run server`
-
+## Docker (em implementação para conectar ao banco)
 
 ### Isso disponibilizará a aplicação em http://localhost:3000.
 
@@ -80,3 +69,9 @@ Para iniciar o servidor localmente:
 - DELETE /api/tasks/{id} -> Deleta uma tarefa com base no ID fornecido.
 - GET /api/tasks/status -> Obtém tarefas filtradas com base no status fornecido.
 - PATCH /api/tasks/{id}/toggle -> Alterna o status de uma tarefa com base no ID fornecido.
+
+![Criando uma tarefa](./images/create-task.png)
+
+![Criando um usuário](./images/create-user.png)
+
+![Resgatando tarefas do usuário](./images/get-user-tasks.png)

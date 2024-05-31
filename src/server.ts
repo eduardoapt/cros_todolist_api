@@ -4,7 +4,7 @@ import dotenv from "dotenv"
 import routes from "./routes"
 
 const swaggerUi = require("swagger-ui-express")
-const swaggerSpec = require("../swaggerConfig")
+const swaggerSpec = require("../swaggerConfig.ts")
 
 dotenv.config()
 

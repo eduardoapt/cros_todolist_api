@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 COPY tsconfig.json ./
+COPY swaggerConfig.ts ./
 COPY prisma ./prisma
 COPY src ./src
 
